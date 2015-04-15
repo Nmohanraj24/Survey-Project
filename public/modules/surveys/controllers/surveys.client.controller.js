@@ -9,7 +9,14 @@ angular.module('surveys').controller('SurveysController', ['$scope', '$statePara
 		$scope.create = function() {
 			// Create new Survey object
 			var survey = new Surveys ({
-				name: this.name
+				name: this.name,
+                q1:this.q1,
+                 q2:this.q2,
+                 q3:this.q3,
+                 q4:this.q4,
+                 q5:this.q5
+                 
+                
 			});
 
 			// Redirect after save
