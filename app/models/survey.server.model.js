@@ -16,57 +16,71 @@ var SurveySchema = new Schema({
 		required: 'Please fill Survey name',
 		trim: true
 	},
-    q1: {
+    question1: {
 		type: String,
 		default: '',
-		required: 'Please fill Survey for Question1',
+		required: 'Please fill Survey Question 1',
 		trim: true
 	},
-    q2: {
+    ans1Option1: {
 		type: String,
 		default: '',
-		required: 'Please fill Survey for Question2',
+		required: 'Please fill Option 1 for Question 1',
 		trim: true
 	},
-    q3: {
+    ans1Option2: {
 		type: String,
 		default: '',
-		required: 'Please fill Survey for Question3',
+		required: 'Please fill Option 2 for Question 1',
 		trim: true
 	},
-    q4: {
-		type: String,
-		default: '',
-		required: 'Please fill Survey for Question4',
-		trim: true
-	},
-    q5: {
-		type: String,
-		default: '',
-		required: 'Please fill Survey for Question5',
-		trim: true
-	},  
-    a1: {
+    ans1Option3: {
 		type: String,
 		default: '',
 		trim: true
 	},
-    a2: {
+    question2: {
+		type: String,
+		default: '',
+		required: 'Please fill Survey Question 2',
+		trim: true
+	},
+    ans2Option1: {
+		type: String,
+		default: '',
+		required: 'Please fill Option 1 for Question 2',
+		trim: true
+	},
+    ans2Option2: {
+		type: String,
+		default: '',
+		required: 'Please fill Option 2 for Question 2',
+		trim: true
+	},
+    ans2Option3: {
 		type: String,
 		default: '',
 		trim: true
 	},
-    a3: {
+    question3: {
 		type: String,
 		default: '',
+		required: 'Please fill Survey Question 3',
 		trim: true
 	},
-    a4: {
+    ans3Option1: {
 		type: String,
 		default: '',
+		required: 'Please fill Option 1 for Question 3',
 		trim: true
 	},
-    a5: {
+    ans3Option2: {
+		type: String,
+		default: '',
+		required: 'Please fill Option 2 for Question 3',
+		trim: true
+	},
+    ans3Option3: {
 		type: String,
 		default: '',
 		trim: true
@@ -79,7 +93,6 @@ var SurveySchema = new Schema({
 		type: Schema.ObjectId,
 		ref: 'User'
 	}
-    
 });
 
 mongoose.model('Survey', SurveySchema);

@@ -1,0 +1,68 @@
+
+
+<!-- Answers Section -->
+<div data-ng-controller="AnswersController">
+       <div class="col-md-12">
+        <form class="form-horizontal" data-ng-init="findStats()" novalidate>
+            <fieldset>
+                <div class="form-group">
+                    <div class="controls">
+
+                       <table  width="100%">
+                          <tr>
+                              <td colspan="4" valign="top">
+                                   <h3>Survey Statistics</h3><br><br>
+                                 </td>
+                               </tr>
+                               <tr>
+                                <td colspan="4">
+                                   <h5 data-ng-repeat="stat in stats" data-ng-hide="!stat.length"><b>Total number of respondants:</b> {{stat.length}}</h5><br>
+                                 </td>
+                               </tr>
+                               <tr bgcolor="#F8F8F8">
+                                <td align="center"><br>
+                                   <h5><b>Answer 1</b></h5><br>
+                                 </td>
+                                 <td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option One: {{stat.ans1Option1}}</h5>
+                                  </td><td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option Two: {{stat.ans1Option2}}</h5>
+                                  </td><td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option Three: {{stat.ans1Option3}}</h5>
+                              </td>
+                              </tr>
+                                <tr>
+                                  <td align="center"><br>
+                                   <h5><b>Answer 2</b></h5><br>
+                                 </td>
+                                 <td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option One: {{stat.ans2Option1}}</h5>
+                                  </td><td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option Two: {{stat.ans2Option2}}</h5>
+                                  </td><td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option Three: {{stat.ans2Option3}}</h5>
+                              </td>
+                          </tr>
+                                <tr  bgcolor="#F8F8F8">
+                                  <td align="center"><br>
+                                   <h5><b>Answer 3</b></h5><br>
+                                 </td>
+                                 <td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option One: {{stat.ans3Option1}}</h5>
+                                  </td><td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option Two: {{stat.ans3Option2}}</h5>
+                                  </td><td align="center">
+                                  <h5 data-ng-repeat="stat in stats" data-ng-hide="stat.length">Option Three: {{stat.ans3Option3}}</h5>
+                              </td>
+                          </tr>
+                          <tr>
+                            
+                          </tr>
+                        </table>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
